@@ -42,7 +42,7 @@ button:disabled{opacity:.6;cursor:wait}
   <p class="note">Just a little note: Please keep gifts to a maximum value of $150.</p>
 </main>
 <script>
-const D = {"salt": "BtKHsEt6WzyUr7W1gWZjsQ==", "iter": 300000, "entries": [{"iv": "og15ixtVRSJGt0zS", "ct": "dNhLCmQdONKPmncl5nQVCYw++JQnXM6slb0UFgVbY9o/K9wd2ovtJ+5i"}, {"iv": "ywjFOBqctb09u1Td", "ct": "AsfbTU0QK/c1XICcdO9YlLccq2V8xwZLvTWQRWECy7Byw3KHR5RkcNQABPe4"}, {"iv": "t6kXa+JzqVPdjozj", "ct": "xqdNoSoHaolYShbdZrK7RPzXmw9ncqiIDSTfXR1AqaDGANEnpHHZ7Pgt"}, {"iv": "xXtwwMIhiraVCDFb", "ct": "i6shPCfFjXBhkcQo+c4R+vwuCYMXW7/1bVVY49TJWfAB/moPaW8H+dKl"}, {"iv": "2savkg/5NCsf4dIN", "ct": "39BeSDbsGRV0ne7BAkPD2634trZQaIoPSvxrCgh8wjJa3PEFJn0YTX9+xQ4="}, {"iv": "qk1v/OxFE37Sj7DH", "ct": "n0tb2X7UM+IW8kfX2RfCTxtWUneRnY4ZCKL0WI+ndek1k2cXAvc95e/qYA=="}]};
+const D = {"salt": "CLZ0ZZypKARZnmNqxLyehg==", "iter": 300000, "entries": [{"iv": "yKFqp0qX7Ei/6CrF", "ct": "KI5VIRkLyJ3RBVedeDbnQKOvpoZYCzhBhPDf9Z0dr663U5KQJBvepNWzXg=="}, {"iv": "yssd8XtjeszV8aFY", "ct": "F0ONR4+tFdKbFaxV96gwzxC2ErwDlKkugTxI8VAm7eVQMuNvoZmYwyZp"}, {"iv": "YJX6YxlhhYxPh5Wp", "ct": "2jLtctx/wibHX1BMzH+KYKIW32Rka+gLMIEYnfFDYh6vRxA6x3QtxNc="}, {"iv": "C7X6BsAR0rilpurR", "ct": "huyCdY1mfdVZ0xe/uyBK3djZhd5L5oqhAuThQloTugpIowUfAdcGFjzx"}, {"iv": "wHlcktOnG6+aMJNs", "ct": "ZRUJbQWvdoyKGLt7nnmGjiRc8iVtAdRpROBfmJofCVcJbe4AwFriwovOxui4"}, {"iv": "WbgS5QCgVuL03Nsc", "ct": "vKtg4S6jhh6Zitb2zagPzMVDbEFNOEh25ZHaVShtoaYI0ZsqB9GeSE3XbFRk"}]};
 const b64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
 async function lookup(code){
   const base = await crypto.subtle.importKey("raw", new TextEncoder().encode(code), "PBKDF2", false, ["deriveKey"]);
