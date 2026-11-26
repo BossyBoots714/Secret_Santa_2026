@@ -16,7 +16,7 @@ body{background:#dfe2e4 url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/
 h1{font-family:"Mountains of Christmas",Georgia,serif;font-size:clamp(2.2rem,8vw,3.2rem);line-height:1.1;color:var(--red);margin:0 0 16px}
 p{font-size:1.1rem;line-height:1.55;margin:0 0 26px}
 input{width:9rem;font:inherit;font-size:1.8rem;letter-spacing:.5em;text-indent:.5em;text-align:center;padding:10px;border:2px solid var(--green);border-radius:10px;background:#fff;color:var(--green)}
-input:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+input:focus,input:focus-visible{outline:none}button:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
 button{display:block;margin:18px auto 0;font:inherit;font-weight:600;font-size:1.05rem;color:#fff;background:var(--red);border:0;border-radius:10px;padding:12px 34px;cursor:pointer}
 button:hover{background:var(--red-dark)}
 button:disabled{opacity:.6;cursor:wait}
@@ -24,6 +24,8 @@ button:disabled{opacity:.6;cursor:wait}
 .name{color:var(--red);font-weight:700}
 .reveal h1{color:var(--green);margin:0;font-size:clamp(1.9rem,7vw,2.8rem);line-height:1.25}
 .reveal .name{color:var(--red)}
+.note{margin:26px 0 0;font-size:min(.85rem,2.5vw);line-height:1.5;white-space:nowrap;color:#6b6b6b}
+@media (max-width:560px){body{padding:12px}.reveal{padding-left:12px;padding-right:12px}}
 [hidden]{display:none!important}
 </style>
 </head>
@@ -37,6 +39,7 @@ button:disabled{opacity:.6;cursor:wait}
 </main>
 <main class="card reveal" id="result" hidden>
   <h1>Hi <span class="name" id="giver"></span>, you’re buying for <span class="name" id="recipient"></span>.</h1>
+  <p class="note">Just a little note: Please keep gifts to a maximum value of $150.</p>
 </main>
 <script>
 const D = {"salt": "BtKHsEt6WzyUr7W1gWZjsQ==", "iter": 300000, "entries": [{"iv": "og15ixtVRSJGt0zS", "ct": "dNhLCmQdONKPmncl5nQVCYw++JQnXM6slb0UFgVbY9o/K9wd2ovtJ+5i"}, {"iv": "ywjFOBqctb09u1Td", "ct": "AsfbTU0QK/c1XICcdO9YlLccq2V8xwZLvTWQRWECy7Byw3KHR5RkcNQABPe4"}, {"iv": "t6kXa+JzqVPdjozj", "ct": "xqdNoSoHaolYShbdZrK7RPzXmw9ncqiIDSTfXR1AqaDGANEnpHHZ7Pgt"}, {"iv": "xXtwwMIhiraVCDFb", "ct": "i6shPCfFjXBhkcQo+c4R+vwuCYMXW7/1bVVY49TJWfAB/moPaW8H+dKl"}, {"iv": "2savkg/5NCsf4dIN", "ct": "39BeSDbsGRV0ne7BAkPD2634trZQaIoPSvxrCgh8wjJa3PEFJn0YTX9+xQ4="}, {"iv": "qk1v/OxFE37Sj7DH", "ct": "n0tb2X7UM+IW8kfX2RfCTxtWUneRnY4ZCKL0WI+ndek1k2cXAvc95e/qYA=="}]};
